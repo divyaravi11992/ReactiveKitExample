@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TwitterFeedViewController" customModule="Code_Challenge" customModuleProvider="target">
+            <connections>
+                <outlet property="logoutButton" destination="bhZ-FO-CEL" id="tsh-qO-XFq"/>
+                <outlet property="tableView" destination="zXm-Mc-Rcz" id="Ezs-cX-hVJ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VBO-f2-RAX">
+                    <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Agg-Ys-UXR">
+                            <rect key="frame" x="187" y="5" width="40" height="40"/>
+                            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="IuH-VX-FQr"/>
+                                <constraint firstAttribute="height" constant="40" id="UXY-HJ-MCm"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhZ-FO-CEL">
+                            <rect key="frame" x="348" y="0.0" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="UTh-qQ-eVS"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                            <state key="normal" title="Logout">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="bhZ-FO-CEL" secondAttribute="trailing" constant="16" id="2To-3S-i5X"/>
+                        <constraint firstAttribute="bottom" secondItem="bhZ-FO-CEL" secondAttribute="bottom" id="8nv-oU-38D"/>
+                        <constraint firstItem="Agg-Ys-UXR" firstAttribute="centerX" secondItem="VBO-f2-RAX" secondAttribute="centerX" id="OHk-kL-WrN"/>
+                        <constraint firstAttribute="height" constant="50" id="QXq-5j-buJ"/>
+                        <constraint firstItem="bhZ-FO-CEL" firstAttribute="top" secondItem="VBO-f2-RAX" secondAttribute="top" id="eFw-wT-nJP"/>
+                        <constraint firstItem="Agg-Ys-UXR" firstAttribute="centerY" secondItem="VBO-f2-RAX" secondAttribute="centerY" id="zQj-Pn-51y"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zXm-Mc-Rcz">
+                    <rect key="frame" x="0.0" y="94" width="414" height="802"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="zXm-Mc-Rcz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="3Pb-zC-vq6"/>
+                <constraint firstItem="zXm-Mc-Rcz" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="54K-xW-H0f"/>
+                <constraint firstItem="VBO-f2-RAX" firstAttribute="top" secondItem="g6a-4S-4xs" secondAttribute="top" id="LP8-vk-5nd"/>
+                <constraint firstItem="VBO-f2-RAX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="LiR-p8-WFP"/>
+                <constraint firstAttribute="trailing" secondItem="zXm-Mc-Rcz" secondAttribute="trailing" id="XhH-k8-faI"/>
+                <constraint firstAttribute="trailing" secondItem="VBO-f2-RAX" secondAttribute="trailing" id="a6d-gC-6JK"/>
+                <constraint firstItem="zXm-Mc-Rcz" firstAttribute="top" secondItem="VBO-f2-RAX" secondAttribute="bottom" id="ql9-0U-TMj"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="g6a-4S-4xs"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="logo" width="200" height="200"/>
+    </resources>
+</document>

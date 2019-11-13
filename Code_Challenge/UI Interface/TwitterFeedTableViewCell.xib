@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="TweetTableViewCell" selectionStyle="none" indentationWidth="10" rowHeight="100" id="N7Z-Lx-yq5" userLabel="Twitter Feed Cell" customClass="TwitterFeedTableViewCell" customModule="Code_Challenge" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="N7Z-Lx-yq5" id="Q7Q-k3-3eB">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UST-vh-BYn" userLabel="User">
+                        <rect key="frame" x="16" y="8" width="40" height="17"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Text" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yUp-RA-5Ec" userLabel="Content">
+                        <rect key="frame" x="16" y="30" width="24" height="14.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="236" id="eIc-mD-myo"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="yUp-RA-5Ec" firstAttribute="leading" secondItem="Q7Q-k3-3eB" secondAttribute="leading" constant="16" id="4iZ-yu-NvL"/>
+                    <constraint firstAttribute="bottom" secondItem="yUp-RA-5Ec" secondAttribute="bottom" id="KwV-8T-fDx"/>
+                    <constraint firstItem="UST-vh-BYn" firstAttribute="top" secondItem="Q7Q-k3-3eB" secondAttribute="top" constant="8" id="NsR-ct-3x0"/>
+                    <constraint firstItem="UST-vh-BYn" firstAttribute="leading" secondItem="Q7Q-k3-3eB" secondAttribute="leading" constant="16" id="Pz3-fG-hXK"/>
+                    <constraint firstAttribute="trailing" secondItem="UST-vh-BYn" secondAttribute="trailing" constant="16" id="Tdk-cf-yYZ"/>
+                    <constraint firstAttribute="trailing" secondItem="yUp-RA-5Ec" secondAttribute="trailing" constant="16" id="Yra-TS-s1t"/>
+                    <constraint firstItem="yUp-RA-5Ec" firstAttribute="top" secondItem="UST-vh-BYn" secondAttribute="bottom" constant="5" id="aER-8P-JUT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="content" destination="yUp-RA-5Ec" id="vgv-1Q-ESg"/>
+                <outlet property="user" destination="UST-vh-BYn" id="ZL6-JU-lkH"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
